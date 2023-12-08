@@ -9,9 +9,6 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] TextMeshProUGUI myText;
     [SerializeField] GameObject prefab;
     [SerializeField] bool dropsItem = true;
-    [SerializeField] bool isBoss = false;
-    [SerializeField] bool isBossAlive = false;
-    [SerializeField] GameObject teleporter;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player Bullet")
@@ -22,12 +19,6 @@ public class EnemyHealth : MonoBehaviour
                 if (dropsItem == true)
                 {
                     GameObject crate = Instantiate(prefab, transform.position, Quaternion.identity);
-                }
-                if (isBoss == true)
-                {
-                    teleporter.SetActive(true);
-                    Debug.Log("foo");
-                    isBossAlive = false;
                 }
                 Destroy(gameObject);
             }
@@ -45,19 +36,8 @@ public class EnemyHealth : MonoBehaviour
                 {
                     GameObject crate = Instantiate(prefab, transform.position, Quaternion.identity);
                 }
-                if (isBoss == true)
-                {
-                    teleporter.SetActive(true);
-                    Debug.Log("foo");
-                    isBossAlive = false;
-                }
                 Destroy(gameObject);
             }
         }
-    }
- 
-    public bool IsBossAlive()
-    {
-        return isBossAlive;
     }
 }

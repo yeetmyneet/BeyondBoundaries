@@ -58,7 +58,7 @@ public class TopDownMovement : MonoBehaviour
 
         else if (playerHasVerticalSpeed)
         {
-            transform.localScale = new Vector2(Mathf.Sign(rb.velocity.y), 1f);
+            transform.localScale = new Vector2(-Mathf.Sign(rb.velocity.y), 1f);
         }
     }
 }
