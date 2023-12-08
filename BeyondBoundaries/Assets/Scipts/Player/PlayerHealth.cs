@@ -12,8 +12,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        bool isDodging = GetComponent<TopDownMovement>().IsDodging();
-        if (collision.gameObject.tag == "Enemy" && !isDodging)
+        if (collision.gameObject.tag == "Enemy")
         {
             health--;
             myText.text = "Health: " + health;

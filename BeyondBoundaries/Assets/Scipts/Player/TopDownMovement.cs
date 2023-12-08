@@ -5,14 +5,7 @@ using UnityEngine;
 public class TopDownMovement : MonoBehaviour
 {
     Rigidbody2D rb;
-    [SerializeField] bool dodgeRoll = true;
-    bool isDodging = false;
     [SerializeField] float runSpeed = 5.0f;
-    [SerializeField] float dodgeSpeed = 4f;
-    [SerializeField] float dodgeDelay = 1f;
-    float dodgeTimer = 0;
-    float dodgeDelayTimer = 0;
-    [SerializeField] float dodgeDuration = 0.5f;
 
     Vector2 moveInput;
     Animator myAnimator;
@@ -35,55 +28,37 @@ public class TopDownMovement : MonoBehaviour
         Run();
         FlipSprite();
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if(dodgeRoll == true && dodgeDelayTimer > dodgeDelay)
-            {
-                isDodging = true;
-                //rb.velocity = new Vector2(x, y) * runSpeed * dodgeSpeed;
-            }
-        }
-        if (isDodging)
-        { 
-            dodgeTimer += Time.deltaTime;
-            if(dodgeTimer > dodgeDuration)
-            {
-                dodgeDelayTimer = 0;
-                isDodging = false;
-                dodgeTimer = 0;
-            }
-        }
-        else
-        {
-            dodgeDelayTimer += Time.deltaTime;
-        }
-
     }
-    /*void OnMove(InputValue value)
-    {
-        moveInput = value.Get<Vector2>();
-        Debug.Log(moveInput);
-    }*/
+
     void Run()
     {
-        //Vector2 playerVelocity = new Vector2(moveInput.x * runSpeed, rb.velocity.y);
-        //rb.velocity = playerVelocity;
-
+        bool playerHasVerticalSpeed = Mathf.Abs(rb.velocity.y) > Mathf.Epsilon;
         bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
-        myAnimator.SetBool("isRunning", playerHasHorizontalSpeed);
+
+        if(playerHasHorizontalSpeed)
+        {
+            myAnimator.SetTrigger("isRunning");
+        }
+        
+        else if (playerHasVerticalSpeed)
+        {
+            myAnimator.SetTrigger("isRunning");
+        }
     }
 
     void FlipSprite()
     {
         bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
+        bool playerHasVerticalSpeed = Mathf.Abs(rb.velocity.y) > Mathf.Epsilon;
 
         if (playerHasHorizontalSpeed)
         {
             transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
         }
-    }
-    public bool IsDodging()
-    {
-        return isDodging;
+
+        else if (playerHasVerticalSpeed)
+        {
+            transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
+        }
     }
 }
