@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ed5c754c8217c1f4f84683e66829f582
+guid: c87deff2682bc264db9da04d17958291
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 48
+  spritePixelsToUnits: 31.5
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Flipped Player_0
+      name: Bank Carpet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
-        width: 96
-        height: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08c267f0f5faeb843b28e8da1505ea0c
-      internalID: 1297376433
+      spriteID: 04c62c68e10239a4fbfe7d7455b8cb0b
+      internalID: 78029296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flipped Player_1
+      name: Bank Carpet_1
       rect:
         serializedVersion: 2
-        x: 96
-        y: 192
-        width: 96
-        height: 96
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,104 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 533590dd8bb6cb74db30b74a3eba903a
-      internalID: 1357231307
+      spriteID: 1bade98da5919594580e851154011637
+      internalID: -1732203869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flipped Player_2
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 192
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56c3f6d7d0f1ade44b12c9b7d8ff90e3
-      internalID: -787640347
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flipped Player_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9011e681c4dd7e748a5ba10e392814fc
-      internalID: 1841930746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flipped Player_4
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1d7bc7ad627c7c45916b516147c448d
-      internalID: 1436266524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flipped Player_5
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 96
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13500fdcf8a0ff44e99431c006922648
-      internalID: -1987746780
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flipped Player_6
+      name: Bank Carpet_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
-        height: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,50 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f91dfb7d866ca7b4389328c031f41370
-      internalID: 27232671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flipped Player_7
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5af836aa6d03bc64687725fbff851794
-      internalID: 1577934102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flipped Player_8
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb5bfe52c6c341d4a808699bfa382abd
-      internalID: 1116239658
+      spriteID: 405252bc648481c43832e22b671f038e
+      internalID: -372600765
       vertices: []
       indices: 
       edges: []
@@ -304,15 +178,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Flipped Player_0: 1297376433
-      Flipped Player_1: 1357231307
-      Flipped Player_2: -787640347
-      Flipped Player_3: 1841930746
-      Flipped Player_4: 1436266524
-      Flipped Player_5: -1987746780
-      Flipped Player_6: 27232671
-      Flipped Player_7: 1577934102
-      Flipped Player_8: 1116239658
+      Bank Carpet_0: 78029296
+      Bank Carpet_1: -1732203869
+      Bank Carpet_2: -372600765
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
