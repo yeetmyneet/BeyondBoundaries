@@ -11,6 +11,8 @@ TagManager:
   - Valuable
   - High End Valuable
   - Walls
+  - Millions
+  - Enemy
   layers:
   - Default
   - TransparentFX
