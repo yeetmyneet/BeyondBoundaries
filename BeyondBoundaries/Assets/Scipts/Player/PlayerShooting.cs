@@ -19,7 +19,7 @@ public class PlayerShooting : MonoBehaviour
     float x = 2;
     float y = 0;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Max Ammo" && bulletCount < maxBulletCount)
         {
@@ -32,7 +32,7 @@ public class PlayerShooting : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-        else if (collision.gameObject.tag == "Ammo Crate" && bulletCount < maxBulletCount)
+        else if (collision.gameObject.tag == "Pistol" && bulletCount < maxBulletCount)
         {
             bulletCount += 10;
             if (bulletCount > maxBulletCount)
