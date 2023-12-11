@@ -7,6 +7,10 @@ TagManager:
   - Pistol
   - Enemy Bullet
   - Player Bullet
+  - Small Valuable
+  - Valuable
+  - High End Valuable
+  - Walls
   layers:
   - Default
   - TransparentFX
