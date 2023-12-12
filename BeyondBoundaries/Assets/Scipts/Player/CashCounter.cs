@@ -45,6 +45,33 @@ public class CashCounter : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+    if (collision.gameObject.tag == "Small Valuable")
+        {
+            cashAmount += dollars;
+            myText.text = "Cash: $" + cashAmount;
+            Destroy(collision.gameObject);
+        }
+        
+        else if (collision.gameObject.tag == "Valuable")
+        {
+            cashAmount += hundreds;
+            myText.text = "Cash: $" + cashAmount;
+            Destroy(collision.gameObject);
+        }
+
+        else if (collision.gameObject.tag == "High End Valuable")
+        {
+            cashAmount += thousands;
+            myText.text = "Cash: $" + cashAmount;
+            Destroy(collision.gameObject);
+        }
+
+        else if (collision.gameObject.tag == "Millions")
+        {
+            cashAmount += millions;
+            myText.text = "Cash: $" + cashAmount;
+            Destroy(collision.gameObject);
+        }
         if (cashAmount > 1000000)
         {
             teleporter.SetActive(true);

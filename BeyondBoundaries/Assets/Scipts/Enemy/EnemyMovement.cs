@@ -9,8 +9,10 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] float moveSpeed = 5.0f;
     Vector3 home;
     Rigidbody2D myRigidbody;
+    Animator myAnimator;
     void Start()
     {
+        myAnimator = GetComponent<Animator>();
         home = transform.position;
         myRigidbody = GetComponent<Rigidbody2D>();
     }
@@ -25,6 +27,7 @@ public class EnemyMovement : MonoBehaviour
         {
             moveDirection.Normalize();
             GetComponent<Rigidbody2D>().velocity = moveDirection * moveSpeed;
+            myAnimator.SetTrigger("isShooting");
         }
         else
         {
@@ -33,11 +36,13 @@ public class EnemyMovement : MonoBehaviour
             {
                 moveDirection.Normalize();
                 GetComponent<Rigidbody2D>().velocity = moveDirection * moveSpeed;
+                myAnimator.SetTrigger("isShooting");
             }
             else
             {
                 transform.position = home;
                 GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+                myAnimator.SetTrigger("isShooting");
             }
         }
     }
@@ -48,7 +53,7 @@ public class EnemyMovement : MonoBehaviour
 
         if (playerHasHorizontalSpeed)
         {
-            transform.localScale = new Vector2(-Mathf.Sign(myRigidbody.velocity.x), 1f);
+            transform.localScale = new Vector2(Mathf.Sign(myRigidbody.velocity.x), 1f);
         }
     }
 }
