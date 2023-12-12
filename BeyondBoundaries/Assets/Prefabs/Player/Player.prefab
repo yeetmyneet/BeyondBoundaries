@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42bfe2ef735685042a3f2d236fce504e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 6
+  health: 20
   myText: {fileID: 0}
   loadDelay: 1
 --- !u!95 &2129278858052178055
@@ -220,8 +220,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45a868dff7fe75646ab9bb4eb840e486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheap: 100
-  expensive: 1500
-  highEnd: 10000
+  dollars: 10
+  hundreds: 355
+  thousands: 9000
+  millions: 1000000
   cashAmount: 0
   myText: {fileID: 0}
+  teleporter: {fileID: 0}
