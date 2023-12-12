@@ -45,7 +45,7 @@ public class CashCounter : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-    if (collision.gameObject.tag == "Small Valuable")
+        if (collision.gameObject.tag == "Small Valuable")
         {
             cashAmount += dollars;
             myText.text = "Cash: $" + cashAmount;
