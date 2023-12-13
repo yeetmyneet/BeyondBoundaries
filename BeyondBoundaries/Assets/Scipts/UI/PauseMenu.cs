@@ -7,7 +7,6 @@ public class PauseMenu : MonoBehaviour
 {
 	void Update()
 	{
-
 		if (Input.GetKeyDown(KeyCode.Escape) && Time.timeScale == 1)
 		{
 			Time.timeScale = 0;
