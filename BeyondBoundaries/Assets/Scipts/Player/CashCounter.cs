@@ -12,6 +12,7 @@ public class CashCounter : MonoBehaviour
     [SerializeField] float cashAmount;
     [SerializeField] TextMeshProUGUI myText;
     [SerializeField] GameObject teleporter;
+    [SerializeField] AudioClip carHorn;
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Small Valuable")
