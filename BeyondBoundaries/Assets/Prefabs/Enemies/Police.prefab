@@ -124,7 +124,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0013587475, y: -0.00007724762}
+  m_Offset: {x: -0.008457661, y: 0.004221022}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -135,7 +135,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.93691206, y: 0.9144958}
+  m_Size: {x: 1.2698221, y: 1.2084843}
   m_EdgeRadius: 0
 --- !u!95 &7985703677998647272
 Animator:
@@ -147,7 +147,7 @@ Animator:
   m_GameObject: {fileID: 7985703677998647252}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 02d6e69551865484aa8480a622915b2b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  chaseDistance: 2
+  chaseDistance: 8
   moveSpeed: 5
 --- !u!114 &7985703677998647274
 MonoBehaviour:
@@ -186,14 +186,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootDelay: 0.5
-  shootRange: 7
+  shootRange: 8
   bulletSpeed: 50
   prefab: {fileID: 7371568716514977725, guid: fdaed7cb2f8a65f4287766ca2fc70814, type: 3}
   target: {fileID: 0}
   bulletLifetime: 2
   predictiveShoot: 1
   predictiveLead: 1
-  enemyShootSound: {fileID: 0}
+  enemyShootSound: {fileID: 8300000, guid: f90d3750f5292b243b7d1f0784b14266, type: 3}
 --- !u!114 &7985703677998647275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b7498323ba17c14dba4d0ebe77b3be5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 10
+  enemyHealth: 5
   myText: {fileID: 0}
   prefab: {fileID: 853738422293327712, guid: 24c5aff24100a88499569d39898196b2, type: 3}
   dropsItem: 1
