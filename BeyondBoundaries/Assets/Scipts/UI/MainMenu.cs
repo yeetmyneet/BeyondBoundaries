@@ -12,6 +12,7 @@ public class MainMenu : MonoBehaviour
 
     public void ExitGame() 
     {
+        Debug.Log("real.");
         Application.Quit();
     }
 }
